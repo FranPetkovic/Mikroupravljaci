@@ -1,0 +1,16 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcdEkran(7, 8, 9, 10, 11, 12; // napravio sam obijekt pod imenom lcdEkran
+
+void setup(){
+  lcdEkran.begin(16,2); // ldcEkran prime 16 stupaca i 2 reda
+  Serial.begin(9600);
+}
+
+void loop(){
+  lcdEkran.setCursor(0,0) // pomaknemo kursor na 0 stupac i 0 red
+  lcdEkran.print("Fran") // ispisemo "Fran"
+  lcdEkran.setCursor(4,2) // pomaknemo kursor na 4 stupac i 2 red
+  lcdEkran.print("Petkovic") // ispisemo "Petkovic"
+}
+
